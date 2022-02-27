@@ -1,15 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: ApeTopiaFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
-  color: #FFFFFF;
+  background-color:#c0cfc4;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.mintBox {
+  text-align: center;
+  color: black;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 0px;
+  border-radius: 30px;
+  width:400px;
+}
+@font-face{
+  font-family: ApeTopiaFont;
+  src: url(GoldenAge.ttf)
 }

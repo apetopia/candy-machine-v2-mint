@@ -192,17 +192,11 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
-      )}
+<div className="mintBox">
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
+      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL | Mint Price: 0.64 SOL</p>}
 
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
-
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
+      {wallet && <p>Total Supply: {itemsAvailable} | Minted: {itemsRedeemed} | Remaining: {itemsRemaining}</p>}
 
       {wallet && whitelistEnabled && <p>Whitelist token balance: {whitelistTokenBalance}</p>}
 
@@ -257,6 +251,7 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
+      </div>
     </main>
   );
 };
